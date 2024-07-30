@@ -1,0 +1,82 @@
+.bg-card {
+  background-color: #f9f9f9;
+}
+.border {
+  border: 1px solid #ccc;
+}
+.border-border {
+  border-color: #ddd;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.text-left {
+  text-align: left;
+}
+.overflow-x-auto {
+  overflow-x: auto;
+}
+.bg-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+.text-primary-foreground {
+  color: #fff;
+}
+.bg-destructive {
+  background-color: #dc3545;
+  color: #fff;
+}
+.text-destructive-foreground {
+  color: #fff;
+}
+.bg-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+.text-secondary-foreground {
+  color: #fff;
+}
+.hover\:bg-secondary\/80:hover {
+  background-color: rgba(108, 117, 125, 0.8);
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.text-muted-foreground {
+  color: #6c757d;
+}
+input[type="text"], select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+/* Add this to your App.css or a similar stylesheet */
+.table-row {
+  position: relative;
+}
+
+.plus-button {
+  color: #007bff;
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.table-row:hover .plus-button {
+  opacity: 1;
+}
+
