@@ -100,18 +100,18 @@ const App = () => {
 
   return (
     <div style={{display:'flex',alignItems:'center',justifyContent:'center',width:'100vw',marginTop:'2vw'}}>
-     <DragDropContext onDragEnd={onDragEnd}> 
+     <DragDropContext onDragEnd={onDragEnd} > 
       <Droppable droppableId="columns" direction="horizontal"   style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
         {(provided) => (
           <div
             ref={provided.innerRef}
             {...provided.droppableProps}
-            className="overflow-x-auto ml-[3vw]"
+            className="  ml-[3vw]"
           >
-            <table className="min-w-full   border-none">
+            <table className="min-w-full   border">
               <thead className="bg-card">
                 <tr>
-                  <th className="  border-none p-2 text-left pl-[2vw]">
+                  <th className="  border p-2 text-left pl-[2vw]">
                     {" "}
                     {"     "}
                   </th>
@@ -123,7 +123,7 @@ const App = () => {
                     >
                       {(provided) => (
                         <th
-                          className="  border-none p-2 text-left"
+                          className="  border p-2 text-left"
                           ref={provided.innerRef}
                           {...provided.draggableProps}
                           {...provided.dragHandleProps}
@@ -139,7 +139,7 @@ const App = () => {
               <tbody>
                 {rows.map((row, rowIndex) => (
                   <tr className="table-row bg-muted-foreground" key={rowIndex}>
-                    <td className="  border-none p-2">
+                    <td className="  border p-2">
                       {/* "+" button */}
                       <button
                         className="plus-button"
@@ -149,7 +149,7 @@ const App = () => {
                       </button>
                     </td>
                     {columns.map((column) => (
-                      <td key={column.id} className="  border-none p-2">
+                      <td key={column.id} className="  border p-2">
                         {column.id === "name" && (
                           <div className="flex items-center flex-row " style={{display:'flex',alignItems:'center'}}>
                             <input
